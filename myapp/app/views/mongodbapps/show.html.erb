@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>People:</strong>
+  <%= @mongodbapp.people %>
+</p>
+
+<p>
+  <strong>Keyw:</strong>
+  <%= @mongodbapp.keyw %>
+</p>
+
+<%= link_to 'Edit', edit_mongodbapp_path(@mongodbapp) %> |
+<%= link_to 'Back', mongodbapps_path %>

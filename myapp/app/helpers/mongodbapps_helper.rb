@@ -1,0 +1,2 @@
+module MongodbappsHelper
+end

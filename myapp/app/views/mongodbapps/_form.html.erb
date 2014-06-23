@@ -1,0 +1,25 @@
+<%= form_for(@mongodbapp) do |f| %>
+  <% if @mongodbapp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mongodbapp.errors.count, "error") %> prohibited this mongodbapp from being saved:</h2>
+
+      <ul>
+      <% @mongodbapp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :people %><br>
+    <%= f.text_field :people %>
+  </div>
+  <div class="field">
+    <%= f.label :keyw %><br>
+    <%= f.text_field :keyw %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
